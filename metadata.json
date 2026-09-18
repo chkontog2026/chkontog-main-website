@@ -1,0 +1,6 @@
+{
+  "name": "chkontog.com Portfolio",
+  "description": "Η προσωπική ιστοσελίδα και παρουσίαση των εφαρμογών του chkontog.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
