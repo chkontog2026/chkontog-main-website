@@ -1,15 +1,11 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
+/** * @license * SPDX-License-Identifier: Apache-2.0 */
 export default function App() {
   const apps = [
-    { name: 'mydocs', url: 'https://mydocs.chkontog.com' },
-    { name: 'mydrive', url: 'https://mydrive.chkontog.com' },
-    { name: 'myhiphopblog', url: 'https://myhiphopblog.chkontog.com' },
-    { name: 'mynews', url: 'https://mynews.chkontog.com' },
-    { name: 'mytranslator', url: 'https://mytranslator.chkontog.com' },
+    { name: 'mydocs', url: 'https://mydocs.chkontog.com', description: 'Κεντρικό σύστημα διαχείρισης και οργάνωσης εγγράφων.', color: 'border-blue-200 hover:border-blue-400' },
+    { name: 'mydrive', url: 'https://mydrive.chkontog.com', description: 'Ασφαλής αποθήκευση και κοινή χρήση αρχείων στο cloud.', color: 'border-emerald-200 hover:border-emerald-400' },
+    { name: 'myhiphopblog', url: 'https://myhiphopblog.chkontog.com', description: 'Hip-hop νέα, κουλτούρα και προσωπικές απόψεις.', color: 'border-amber-200 hover:border-amber-400' },
+    { name: 'mynews', url: 'https://mynews.chkontog.com', description: 'Συγκεντρωτική ροή ειδήσεων από διάφορες πηγές.', color: 'border-purple-200 hover:border-purple-400' },
+    { name: 'mytranslator', url: 'https://mytranslator.chkontog.com', description: 'Εργαλείο μετάφρασης κειμένου σε πραγματικό χρόνο.', color: 'border-rose-200 hover:border-rose-400' },
   ];
 
   return (
@@ -30,10 +26,10 @@ export default function App() {
             <a
               key={app.name}
               href={app.url}
-              className="block p-6 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200"
+              className={`block p-6 bg-white border ${app.color} rounded-xl shadow-sm hover:shadow-md transition-all duration-200`}
             >
               <h3 className="text-xl font-medium text-slate-800">{app.name}</h3>
-              <p className="text-sm text-slate-500 mt-2">{app.url}</p>
+              <p className="text-sm text-slate-600 mt-2 leading-relaxed">{app.description}</p>
             </a>
           ))}
         </div>
