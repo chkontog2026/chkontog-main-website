@@ -9,7 +9,7 @@ export default function App() {
     { name: 'mydrive', url: 'https://mydrive.chkontog.com' },
     { name: 'myhiphopblog', url: 'https://myhiphopblog.chkontog.com' },
     { name: 'mynews', url: 'https://mynews.chkontog.com' },
-    { name: 'mytranslate', url: 'https://mytranslate.chkontog.com' },
+    { name: 'mytranslator', url: 'https://mytranslator.chkontog.com' },
   ];
 
   return (
